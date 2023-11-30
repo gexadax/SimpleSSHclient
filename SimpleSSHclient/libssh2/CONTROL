@@ -1,0 +1,23 @@
+Package: libssh2
+Version: 1.11.0
+Port-Version: 1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: c2393ec9d815d049612b5e5cc9a81184c05cd5999da8648448ec45ff282a7cfb
+Description: libssh2 is a client-side C library implementing the SSH2 protocol.
+Default-Features: openssl, zlib
+
+Package: libssh2
+Feature: openssl
+Depends: openssl
+Architecture: x64-windows
+Multi-Arch: same
+Description: Use the openssl crypto backend
+
+Package: libssh2
+Feature: zlib
+Depends: zlib
+Architecture: x64-windows
+Multi-Arch: same
+Description: Use compression via zlib
